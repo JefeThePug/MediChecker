@@ -38,11 +38,6 @@ struct FieldCard: View {
     
     @State private var showDeleteAlert = false
     
-//    let magenta = Color(red: 1.0, green: 0.0, blue: 0.6)
-//    var gradient: LinearGradient {
-//        LinearGradient(colors: [magenta, .cyan], startPoint: .leading, endPoint: .trailing)
-//    }
-    
     var body: some View {
         HStack {
             NavigationLink(destination: EditFieldView(field: $field)) {
@@ -70,14 +65,6 @@ struct FieldCard: View {
                     .frame(maxWidth: .infinity, alignment: .center)
                     .foregroundColor(.black)
                     .padding(.horizontal, 10)
-                //                TextField("Name", text: $field.name)
-                //                    .textFieldStyle(PlainTextFieldStyle())
-                //                    .foregroundColor(.black)
-                //
-                //                TextField("Number", value: $field.number, formatter: NumberFormatter())
-                //                    .keyboardType(.numberPad)
-                //                    .textFieldStyle(PlainTextFieldStyle())
-                //                    .foregroundColor(.white)
             }
             
             NavigationLink(destination: EditFieldView(field: $field)) {

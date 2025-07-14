@@ -15,11 +15,6 @@ extension UIApplication {
 
 struct ContentView: View {
     @State private var fields: [FieldData] = [FieldData()]
-//    var gradient = LinearGradient(colors: [
-//        Color(red: 1.0, green: 0.0, blue: 0.6),
-//        .cyan
-//    ], startPoint: .leading, endPoint: .trailing)
-    
     
     var body: some View {
         NavigationStack {
@@ -107,6 +102,7 @@ struct ContentView: View {
         }
     }
 }
+
 #Preview {
     ContentView()
 }

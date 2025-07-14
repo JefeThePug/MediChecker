@@ -4,11 +4,6 @@ struct EditFieldView: View {
     @Binding var field: FieldData
     @Environment(\.dismiss) var dismiss
     
-//    let magenta = Color(red: 1.0, green: 0.0, blue: 0.6)
-//    var gradient: LinearGradient {
-//        LinearGradient(colors: [magenta, .cyan], startPoint: .leading, endPoint: .trailing)
-//    }
-//    
     var body: some View {
         ZStack {
             Color.black.ignoresSafeArea()
@@ -82,4 +77,3 @@ struct EditFieldView: View {
         .foregroundColor(.white)
     }
 }
-
